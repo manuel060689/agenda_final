@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00BCD4"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agenda"
+            android:textColor="#FF5722"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/etIdContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="No. de Contacto"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre de contacto"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Celular"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etApodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Alias"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:onClick="altaContacto"
+            android:text="Agregar " />
+
+        <Button
+            android:id="@+id/btnConsultarContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="consultarContacto"
+            android:text="Consultar contacto" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:onClick="eliminarContacto"
+            android:text="Eliminar contacto"
+            android:textColor="#FBFDFD" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:onClick="editarContacto"
+            android:text="Editar contacto" />
+
+        <Button
+            android:id="@+id/btnCapturar"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:onClick="abrirCamara"
+            android:text="Tomar foto" />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:onClick="abrirTelefonia"
+            android:text="Llamar" />
+
+        <Button
+            android:id="@+id/btnLista"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="Lista de Contactos" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
